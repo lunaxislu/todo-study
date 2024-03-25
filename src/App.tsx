@@ -1,5 +1,7 @@
+import TodoPage from './page/TodoPage';
+
 function App() {
-  return <h1 className="bg-black">asd</h1>;
+  return <TodoPage />;
 }
 
 export default App;
