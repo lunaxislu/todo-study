@@ -6,14 +6,14 @@ import { removeTodo, switchTodo } from '../store/module/todoSlice';
 const useChangeTodo = () => {
   const dispatch = useDispatch<AppDispatch>();
   const changeTodoStateHandler = (e: MouseEvent<HTMLElement>) => {
-    if (e.target instanceof HTMLButtonElement) {
-      switch (e.target.name) {
-        case 'switch':
-          switchTodoState(e.target.id);
-          break;
-        case 'remove':
-          removeTodoSate(e.target.id);
-      }
+    if (!(e.target instanceof HTMLButtonElement)) return;
+
+    switch (e.target.name) {
+      case 'switch':
+        switchTodoState(e.target.id);
+        break;
+      case 'remove':
+        removeTodoSate(e.target.id);
     }
   };
 
