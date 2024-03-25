@@ -1,7 +1,7 @@
 import { configureStore } from '@reduxjs/toolkit';
-
+import todoSlice from '../module/todoSlice';
 const store = configureStore({
-  reducer: {}
+  reducer: { todoSlice }
 });
 
 export type AppDispatch = typeof store.dispatch;
