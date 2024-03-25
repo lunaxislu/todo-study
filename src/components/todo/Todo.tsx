@@ -1,4 +1,5 @@
 import { clsx } from 'clsx';
+import Card from './card/Card';
 import DoneWork from './done_work/DoneWork';
 import Form from './form/Form';
 import List from './list/List';
@@ -19,4 +20,5 @@ Todo.form = Form;
 Todo.list = List;
 Todo.to_work = ToWork;
 Todo.done_work = DoneWork;
+Todo.card = Card;
 export default Todo;
