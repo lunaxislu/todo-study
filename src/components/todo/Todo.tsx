@@ -1,5 +1,6 @@
 import { clsx } from 'clsx';
 import Form from './form/Form';
+import List from './list/List';
 import Title from './title/Title';
 interface I_TodoProps extends React.ComponentPropsWithoutRef<'div'> {}
 const Todo = (props: I_TodoProps) => {
@@ -13,4 +14,5 @@ const Todo = (props: I_TodoProps) => {
 };
 Todo.title = Title;
 Todo.form = Form;
+Todo.list = List;
 export default Todo;
