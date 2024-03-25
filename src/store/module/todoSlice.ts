@@ -17,7 +17,7 @@ const todoSlice = createSlice({
       state.push(payload);
     },
     switchTodo: (state, { payload }: PayloadAction<string>) => {
-      state.map((todo) => {
+      return state.map((todo) => {
         if (todo.id === payload) {
           return { ...todo, isDone: !todo.isDone };
         }
@@ -25,7 +25,7 @@ const todoSlice = createSlice({
       });
     },
     removeTodo: (state, { payload }: PayloadAction<string>) => {
-      state.filter((todo) => todo.id !== payload);
+      return state.filter((todo) => todo.id !== payload);
     }
   }
 });
