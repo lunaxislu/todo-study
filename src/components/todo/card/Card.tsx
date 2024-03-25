@@ -10,10 +10,10 @@ const Card = ({ id, title, text, isDone }: I_TodoSlice) => {
       </Todo.title>
       <div className="">{text}</div>
       <div>
-        <Button type="button" id={id} datatype="완료">
+        <Button type="button" id={id} datatype="완료" name="switch">
           {isDone ? '수정' : '완료'}
         </Button>
-        <Button type="button" id={id} datatype="삭제">
+        <Button type="button" id={id} datatype="삭제" name="remove">
           삭제
         </Button>
       </div>
