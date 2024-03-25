@@ -2,6 +2,7 @@ import { clsx } from 'clsx';
 import Form from './form/Form';
 import List from './list/List';
 import Title from './title/Title';
+import ToWork from './to_work/TodoWork';
 interface I_TodoProps extends React.ComponentPropsWithoutRef<'div'> {}
 const Todo = (props: I_TodoProps) => {
   const { className, children, ...others } = props;
@@ -15,4 +16,5 @@ const Todo = (props: I_TodoProps) => {
 Todo.title = Title;
 Todo.form = Form;
 Todo.list = List;
+Todo.to_work = ToWork;
 export default Todo;
